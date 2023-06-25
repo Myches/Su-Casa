@@ -41,7 +41,7 @@ import  'react-awesome-slider/dist/custom-animations/cube-animation.css'
          </AutoplaySlider>
          <div className='absolute md:inset-0 inset-[50%] flex flex-col justify-center items-center md:text-[24px] text-[18px] '  >
          <h1 className='  font-bold tracking-[13px] leading-[1.1]   '>MODERN APARTMENT HOUSES </h1>
-      <Fade bottom>  <button className=' mt-14 font-light  tracking-[10px] leading-[1.1] border rounded-3xl border-cyan-950 p-4 bg-blue-950 text-white ' >Explore</button></Fade> 
+      <Fade bottom>  <button className='href="#About" mt-14 font-light  tracking-[10px] leading-[1.1] border rounded-3xl border-cyan-950 p-4 bg-blue-950 text-white ' >Explore</button></Fade> 
       </div>
 
         </div>
