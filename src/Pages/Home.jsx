@@ -12,9 +12,9 @@ import Footer from "./Footer";
 
 function Homepage() {
     return (
-     <div className=" w-full h-screen " >
+     <div className=" w-[100%] h-screen  "style={{ scrollBehavior: 'smooth' }} >
       <Navbar />
-<div className="bg-gray-200">
+<div className="bg-blue-200  ">
       <div className=" mt-12"  id="#Main"> <Main /></div>
       <div className=" mt-12 "  id="About"> <About /></div>
       <div className="mt-12"   id="Properties"> <Properties /></div>

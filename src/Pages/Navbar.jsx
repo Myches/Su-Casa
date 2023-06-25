@@ -11,8 +11,8 @@ export default function Navbar() {
   };
 
   return (
-    <div>
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center w-full md:w-full h-12 bg-black text-blue-500 px-8 text-lg z-10">   
+    <div className="relative">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center w-full h-12 bg-blue-950 text-gray-300 px-8 text-lg z-10">   
     <p className='' >Su-Casa</p>
  
   <ul className="flex justify-around items-center  cursor-pointer hidden md:flex   "   >  
@@ -30,7 +30,7 @@ export default function Navbar() {
 </div> 
 {isOpen &&  (
 
-<ul className="  bg-black w-[70%] h-full mx-auto pt-4   flex flex-col  text-blue-400 fixed top-10 right-0 z-10 ease-in-out duration-500 ">  
+<ul className="  bg-blue-950 w-[70%] h-full mx-auto pt-4   flex flex-col  text-gray-300 fixed top-10 right-0 z-10 ease-in-out duration-500 ">  
 <a href="#About" onClick={toggleMenu}> <li className='m-6 border-b border-gray-600' >About us</li></a>
 <a href="#Properties" onClick={toggleMenu}> <li className='m-6 border-b border-gray-600' > Properties </li></a>
 <a href="#Services" onClick={toggleMenu}> <li className='m-6 border-b border-gray-600' >Services</li></a>

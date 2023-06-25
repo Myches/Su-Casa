@@ -7,22 +7,16 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css'
-import {HiShieldCheck} from 'react-icons/hi'
+import Fade from 'react-reveal/Fade';
 
+function Services() {
 
-function Agents() {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleContent = () => {
-    setIsOpen(!isOpen);
-  };
 
 
   const accordionItems = [
-    { title: 'Best Interest Rate', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis' },
-    { title: 'Prevent Unstable Prices', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis' },
-    { title: 'Best Price on the market', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis' },
+    { title: 'Customer Satisfaction', content: 'Your satisfaction is our top priority. We are committed to delivering exceptional service and exceeding your expectations. Our numerous satisfied clients are a testament to our dedication and commitment to building long-lasting relationships based on trust and integrity.' },
+    { title: 'Market Insights and Analysis', content: 'We go beyond surface-level information. Our in-depth market analysis and insights empower you to make informed decisions. We provide you with data-driven reports, comparative market analyses, and local market trends to help you ' },
+    { title: 'Budgeting Confidence', content: ' Our program allows you to plan your finances with confidence. With locked-in pricing, you can accurately budget for your purchase without the worry of unexpected price increases impacting your financial plans.' },
   ];
 
 
@@ -32,21 +26,26 @@ function Agents() {
 
     return (
 
-     <div className=''>
-      <h1 className='flex justify-center items-center font-bold tracking-[3px] leading-[1.1] text-2xl pb-8 pt-[100px]'>SERVICES</h1>
-      <h2 className='text-3xl flex  justify-center items-center pb-[100px]'>Exclusive Offer For You</h2>
-     <div className="flex justify-center items-center mx-8">
-
-  |<div className='w-1/2 flex  justify-center items-center'> 
-      <img src="./assets/pexel-1.jpg"  className='  h-[450px]  border rounded-2xl'/>
+     <div className='w-full'>
+      <h1 className='flex justify-center items-center font-bold tracking-[3px] leading-[1.1]  pb-8 pt-[100px]'>SERVICES</h1>
+      <h2 className='md:text-3xl text-xl flex  justify-center items-center md:pb-[100px] pb-[50px] text-blue-800 font-bold'>Exclusive Offer For You</h2>
+     <div className="md:flex justify-center items-center mx-8 ">
+     <Fade bottom> 
+  |<div className='md:w-1/2 w-full '> 
+  <h1 className=" md:text-3xl text-xl pb-4 text-blue-800 flex justify-center items-center font-bold">MARCY PROJECTS</h1>
+      <img src="./assets/pexel-1.jpg"  className='  md:h-[450px] h-[250px] border border-blue-700 rounded-2xl md:p-8 p-2'/>
       
     </div>
+    </Fade>
 
-  <div className='w-1/2 '>
-  <h1 className="flex  justify-center items-center text-3xl pb-4 ">Our Value</h1>
-  <p className='py-8 w-[80%] mx-auto'>I'm John Doe a realtor agent, Lorem ipsum dolor sit amet,
-   consectetur adipisicing elit. Saepe omnis beatae libero quisquam ex nostrum repellendus,
-    consectetur suscipit.Velit iusto ducimus sit quos officiis nesciunt libero, officia, aliquam doloremque totam.</p>
+
+    <Fade bottom> 
+  <div className='md:w-1/2 w-full'>
+  <h1 className="flex  justify-center items-center md:text-3xl text-xl pb-4 pt-8 md:pt-0 text-blue-800 font-bold">Our Value</h1>
+  <p className='py-8 w-[80%] mx-auto text-lg'>
+Here at Su-casa, where we deliver unmatched value to our users in the dynamic world of real estate.
+ We are committed to providing you with a seamless,
+ comprehensive, and rewarding experience throughout your real estate journey.</p>
 
   <div className='flex  justify-center items-center '>
   <Accordion className='w-[80%] shadow-lg  '>
@@ -55,7 +54,7 @@ function Agents() {
             <AccordionItemHeading>
                 <AccordionItemButton>
                 
-             <span className="text-xl ">  {item.title}</span>
+             <span className="text-xl text-blue-800">  {item.title}</span>
                 </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel >
@@ -66,10 +65,10 @@ function Agents() {
 </Accordion>
 </div>
 
-    </div>
+    </div></Fade>
       </div>
       </div>
     );
   }
   
-  export default Agents;
+  export default Services;

@@ -1,9 +1,8 @@
-
+import Fade from 'react-reveal/Fade';
 import   AwesomeSlider  from 'react-awesome-slider'
 import   withAutoplay from 'react-awesome-slider/dist/autoplay'
 import  'react-awesome-slider/dist/styles.css'  
 import  'react-awesome-slider/dist/custom-animations/cube-animation.css'
-import Services from './Services'
 
 
 
@@ -41,8 +40,8 @@ import Services from './Services'
 
          </AutoplaySlider>
          <div className='absolute md:inset-0 inset-[50%] flex flex-col justify-center items-center md:text-[24px] text-[18px] '  >
-         <h1 className='  font-bold tracking-[13px]   leading-[1.1]   '>MODERN APARTMENT HOUSES </h1>
-         <button className=' mt-14 font-bold  tracking-[10px] leading-[1.1] border rounded-3xl p-4 bg-blue-500 text-black '>EXPLORE</button>
+         <h1 className='  font-bold tracking-[13px] leading-[1.1]   '>MODERN APARTMENT HOUSES </h1>
+      <Fade bottom>  <button className=' mt-14 font-light  tracking-[10px] leading-[1.1] border rounded-3xl border-cyan-950 p-4 bg-blue-950 text-white ' >Explore</button></Fade> 
       </div>
 
         </div>

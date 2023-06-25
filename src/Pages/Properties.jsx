@@ -15,7 +15,7 @@ function Properties() {
   const fetchPropertiesData = async () => {
     try {
       const response = await axios.get(
-        "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6",
+        "https://ayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6",
         {
           headers: {
             "X-RapidAPI-Key": "af208aba5amshf0beec87a12c7c5p1fc525jsn01005babeeec",
@@ -30,7 +30,7 @@ function Properties() {
     }
 
     const response = await axios.get(
-      "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6",
+      "https://ayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6",
       {
         headers: {
           "X-RapidAPI-Key": "af208aba5amshf0beec87a12c7c5p1fc525jsn01005babeeec",
@@ -103,10 +103,10 @@ const sliderRef=useRef(null)
 
     return (
 
-     <div className='mt-[150px] overflow-hidden'>
- <h1 className='flex justify-center items-center font-bold tracking-[3px] leading-[1.1] text-2xl pt-[100px] '>PROPERTIES</h1>
+     <div className='mt-[150px] '>
+ <h1 className='flex justify-center items-center font-bold tracking-[3px] leading-[1.1]  pt-[100px] '>PROPERTIES</h1>
 
- <h2 className='pt-12 pl-8 font-bold  text-lg flex justify-center items-center text-blue-700'>BEST CHOICES FOR RENT</h2>
+ <h2 className='pt-12 pl-8  md:text-2xl text-xl flex justify-center items-center text-blue-800 font-bold'>BEST CHOICES FOR RENT</h2>
  
 
     <Slider  {...sliderSettings}>
@@ -114,8 +114,8 @@ const sliderRef=useRef(null)
      
      
      <div className=" py-[30px]  " key={i} >  
-     <img src={rent.coverPhoto.url} alt='pic' className='border rounded-2xl w-[400px] h-[250px]'/>
-     <div className='flex  justify-center items-center  mx-auto'> <CiLocationOn /><h1 className='font-bold  '>{rent.location[2].name} </h1>  </div>
+     <img src={rent.coverPhoto.url} alt='pic' className='border rounded-2xl m:w-[400px] md:h-[250px] w-[200px] h-[80px]'/>
+     <div className='flex  justify-center items-center  mx-auto'> <CiLocationOn  className='text-blue-700'/><h1 className='font-bold  '>{rent.location[2].name} </h1>  </div>
      <p className=' flex  justify-center items-center text-sm'>{rent.title}</p>
   
      </div>
@@ -128,7 +128,7 @@ const sliderRef=useRef(null)
     
     </Slider>
 
-    <h2 className='pt-12 pl-8 font-bold  text-lg flex justify-center items-center text-blue-700'>BEST CHOICES FOR SALE</h2>
+    <h2 className='pt-12 pl-8   md:text-2xl text-xl flex justify-center items-center text-blue-800 font-bold'>BEST CHOICES FOR SALE</h2>
 
    
     <Slider {...sliderSettings}>
@@ -137,8 +137,8 @@ const sliderRef=useRef(null)
      
      <div className=" py-[30px]  " key={i} >  
      <img src={sale.coverPhoto.url} alt='pic' className='border rounded-2xl w-[400px] h-[250px]'/>
-     <div className='flex  justify-center items-center  mx-auto'> <CiLocationOn /><h1 className='font-bold  '>{sale.location[2].name} </h1>  </div>
-     <p className=' flex  justify-center items-center text-sm'>{sale.title}</p>
+     <div className='flex  justify-center items-center  mx-auto'> <CiLocationOn  className='text-blue-700'/><h1 className='font-bold  '>{sale.location[2].name} </h1>  </div>
+     <p className=' flex  justify-center items-center text-sm '>{sale.title}</p>
   
      </div>
        
