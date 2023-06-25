@@ -15,7 +15,7 @@ function Properties() {
   const fetchPropertiesData = async () => {
     try {
       const response = await axios.get(
-        "https://ayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6",
+        "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6",
         {
           headers: {
             "X-RapidAPI-Key": "af208aba5amshf0beec87a12c7c5p1fc525jsn01005babeeec",
@@ -30,7 +30,7 @@ function Properties() {
     }
 
     const response = await axios.get(
-      "https://ayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6",
+      "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6",
       {
         headers: {
           "X-RapidAPI-Key": "af208aba5amshf0beec87a12c7c5p1fc525jsn01005babeeec",
